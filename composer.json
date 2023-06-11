@@ -1,0 +1,42 @@
+{
+  "name": "noilty/oauth2-shikimori",
+  "description": "Shikimori OAuth 2.0 Client Provider for The PHP Noilty OAuth2-Client",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roma Kuzmin",
+      "email": "thenoilty@gmail.com",
+      "homepage": "https://www.noilty.com"
+    }
+  ],
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "client",
+    "provider",
+    "authorization",
+    "authentication",
+    "shikimori"
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "ext-json": "*",
+    "league/oauth2-client": "^2.0"
+  },
+  "require-dev": {
+    "eloquent/phony-phpunit": "^6.0 || ^7.1",
+    "phpunit/phpunit": "^8.0 || ^9.0",
+    "squizlabs/php_codesniffer": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Noilty\\OAuth2\\Client\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Noilty\\OAuth2\\Client\\Test\\": "test/src/"
+    }
+  }
+}
